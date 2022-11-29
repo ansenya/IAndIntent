@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/autorization"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15sp"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        tools:text="Main screen" />
+
+    <FrameLayout
+
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_alignTop="@+id/autorization"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180sp"
+        android:background="@color/white">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity">
+
+
+            <TextView
+                android:id="@+id/Autorization"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5sp"
+                android:text="Autorization"
+                android:textSize="25sp" />
+
+
+            <EditText
+                android:id="@+id/login"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_alignTop="@+id/Autorization"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60sp"
+                android:hint="Login"
+                android:inputType="textWebEmailAddress"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_alignTop="@+id/login"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50sp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/wrong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/password"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="45sp"
+                tools:text="Неверный логин или пароль"
+                android:textSize="9sp"
+                android:textColor="#FF0000"
+                android:textStyle="italic"/>
+
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="40sp"
+                android:layout_marginTop="40sp"
+                android:layout_marginEnd="40sp"
+                android:layout_marginBottom="40sp"
+                android:text="Register"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+</RelativeLayout>
+
